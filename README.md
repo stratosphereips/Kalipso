@@ -4,6 +4,8 @@ Kalipso is the terminal user interface for [Slips](https://github.com/stratosphe
 
 Unlike the plain alert logs, Kalipso lets you inspect malicious and normal activity side by side, move through time windows, and drill down into the flows and evidence that caused a detection.
 
+![Kalipso interface](docs/images/kalispo.jpg)
+
 ## Features
 
 - Terminal-based interface for browsing Slips analysis output
