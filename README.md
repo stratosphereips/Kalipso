@@ -33,7 +33,7 @@ Slips groups detections into time windows, which are 1 hour long by default. A p
 Kalipso is typically started while Slips is already running in another terminal.
 
 ```bash
-./kalipso.sh
+./kalipso.sh /path/to/slips/running_slips_info.txt
 ```
 
 If more than one Slips instance is running, Kalipso will prompt you to choose which Redis-backed session to open. The prompt looks like this:
@@ -63,7 +63,7 @@ If Slips is running inside Docker, open a shell in the container and start Kalip
 ```bash
 docker ps
 docker exec -it <container_id> bash
-./kalipso.sh
+./kalipso.sh /path/to/slips/running_slips_info.txt
 ```
 
 ## Requirements and Installation
@@ -75,7 +75,7 @@ Example installation flow used in the Slips docs:
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash -
 sudo apt install -y --no-install-recommends nodejs
-cd modules/kalipso
+cd kalipso
 npm install
 ```
 
